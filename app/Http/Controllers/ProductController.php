@@ -43,7 +43,7 @@ class ProductController extends Controller
             'name' => 'required',
             'price' => 'required',
         ]);
-        dd($request->all());
+        // dd($request->all());
         // here will be the code to call the model and save it to the database
         Product::create($request->only(['name', 'price']));
 
